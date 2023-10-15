@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-flow: column wrap;
+}
+
+header {
+    display: flex;
+}
+
+.theme-changer {
+    position: absolute;
+    align-self: flex-end;
+    justify-self: flex-end;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    margin-bottom: 7rem;
+    margin-left: 30rem;
+    border: 0px none;
+}
+
+.theme-changer img {
+    width: 64px;
+    height: 64px;
+}
+
+
+.style-light {
+    background-color: #fff;
+    color: #000000;
+}
+
+.style-dark {
+    background-color: #101010;
+    color: #d5d5d5;
+}
+
+
+.slider-review {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 20px;
+    width: 450px;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.slider-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.nav-slider {
+    padding-top: 1rem;
+    border-style: none;
+}
+
+.user-pfp {
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 40px;
+    width: 84px;
+    height: 84px;
+    height: auto;
+}
+
+.nav-slider  button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.nav-slider  button:hover {
+    background-color: #e0e0e0;
+    color:#101010;
+    font-weight: 900;
+}
