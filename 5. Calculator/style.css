@@ -4,3 +4,69 @@
     color: #d5d5d5;
     margin: 0px;
 }
+
+button .btn {
+    width: 24px;
+    height: 24px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-flow:column wrap-reverse;
+    border: 1px solid;
+    padding: 1rem;
+}
+
+.input-area {
+    display: block;
+    width: 18rem;
+    height: 3rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.last {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.btn {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border: 0px solid;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.number {
+    background-color: #313131;
+}
+
+.number:hover {
+    background-color: #252525;
+}
+
+.operator {
+    background-color: #b83a3a;
+}
+
+.operator:hover {
+    background-color: #ca3232;
+}
+
+.ac {
+    width: 18rem;
+    background-color: #2172a1;
+}
+
+.ac:hover {
+    background-color: #1e5d81;
+}
