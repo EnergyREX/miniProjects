@@ -24,11 +24,16 @@ body {
     padding: 1rem;
 }
 
+.num-row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
 .input-area {
     display: block;
-    width: 18rem;
-    height: 3rem;
-    font-size: 2rem;
+    width: 17.2rem;
+    height: 4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -50,10 +55,20 @@ body {
     background-color: #313131;
 }
 
+
 .number:hover {
     background-color: #252525;
 }
 
+.number0 {
+    background-color: #313131;
+    width: 8.4rem;
+}
+
+.number0:hover {
+    background-color: #252525;
+    width: 8.4rem;
+}
 .operator {
     background-color: #b83a3a;
 }
@@ -63,7 +78,7 @@ body {
 }
 
 .ac {
-    width: 18rem;
+    width: 17.2rem;
     background-color: #2172a1;
 }
 
