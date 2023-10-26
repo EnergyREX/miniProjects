@@ -22,7 +22,6 @@ btnReset.addEventListener('click', () => {
 btnEquals.addEventListener('click', () => {
     try {
         let inputValue = inputArea.value;
-        console.log(typeof inputValue); // Añadir esto para depuración
         let operation = eval(inputValue);
         console.log(`The result is ${operation}`);
         inputArea.value = operation;
