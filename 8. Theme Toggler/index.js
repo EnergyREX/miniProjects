@@ -1,7 +1,7 @@
 'use strict';
 
-const themeChange = document.querySelector(".theme-changer");
-const themeChangeImg = document.querySelector(".theme-changer img")
+const themeChange = document.querySelector(".theme__icon");
+const themeInfo = document.querySelector(".theme__text");
 const body = document.querySelector("body")
 
 let isLight = true;
@@ -11,23 +11,24 @@ function handleTheme() {
 
     if(isLight) {
 
-        themeChange.classList.remove("style-light");
-        themeChange.classList.add("style-dark");
+        themeChange.classList.remove("fa-sun");
+        themeChange.classList.add("fa-moon")
 
         body.classList.remove("style-light");
         body.classList.add("style-dark");
 
-        themeChangeImg.src = "./light-dark/night.png"
+        themeInfo.innerHTML = "You are now on dark mode."
+
         isLight = false;
 
     } else if (!isLight) {
-        themeChange.classList.remove("style-dark");
-        themeChange.classList.add("style-light");
+        themeChange.classList.remove("fa-moon");
+        themeChange.classList.add("fa-sun");
 
-        body.classList.remove("style-light");
+        body.classList.add("style-light");
         body.classList.remove("style-dark");
 
-        themeChangeImg.src = "./light-dark/light.png"
+        themeInfo.innerHTML = "You are now on light mode."
         isLight = true;
     }
 }

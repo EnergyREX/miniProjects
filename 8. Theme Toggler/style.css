@@ -3,9 +3,11 @@
 * {
     font-family: 'Inter', sans-serif;
     margin: 0px;
+    font-size: 30px;
 }
 
 body {
+    height: 100vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -13,8 +15,8 @@ body {
 }
 
 .style-light {
-    background-color: #fff;
-    color: #000000;
+    background-color: #d5d5d5;
+    color: #101010;
 }
 
 .style-dark {
@@ -22,14 +24,18 @@ body {
     color: #d5d5d5;
 }
 
-.theme-changer {
-    width: 64px;
-    height: 64px;
-    cursor: pointer;
-    border: 0px none;
+.theme__icon {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    cursor:pointer;
 }
 
-.theme-changer img {
-    width: 64px;
-    height: 64px;
+.theme__text {
+    font-size: 1rem;
+}
+
+.theme__title {
+    font-size: 2rem;
+    font-weight: 500;
 }
