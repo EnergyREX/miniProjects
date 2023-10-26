@@ -23,6 +23,7 @@ body {
     border: 1px solid;
     padding: 2rem;
     border-radius: 1rem;
+    box-shadow: 1px 1px 2px 2px rgb(55, 55, 55);
 }
 
 .musicplayer__musictitle {
@@ -59,7 +60,7 @@ body {
 .musicplayer__icon {
     display: block;
     background-color: rgb(61, 5, 5);
-    padding: 1rem;
+    padding: 0.9rem;
     border-radius: 1.1rem;
     width: 1rem;
     cursor: pointer;
