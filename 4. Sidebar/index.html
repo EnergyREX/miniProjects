@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Sidebar</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/95bcbf656c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <p></p>
     <section class="container">
-        <header class="sidebar">
-            <p>SIDEBAR</p>
-        </header>
-        <ul>
-            <li><a>Element 1</a></li>
-            <li><a>Element 2</a></li>
-            <li><a>Element 3</a></li>
-            <li><a>Element 4</a></li>  
-            <li><a>Element 5</a></li>
-            <li><a>Element 6</a></li>
-            <li><a>Element 7</a></li>
-            <li><a>Element 8</a></li>
+        <nav class="container__navigation">
+        <ul class="navigation__bodyList">
+            <li><a class="navigation__element" href="https://energyrex.dev"><i class="fa-sharp fa-solid fa-house element__icon--top"></i></a></li>
+            <li><a class="navigation__element" href="https://energyrex.dev"><i class="fa-solid fa-user element__icon"></i></a></li>
+            <li><a class="navigation__element" href="https://energyrex.dev"><i class="fa-solid fa-paperclip element__icon"></i></a></li>
+            <li><a class="navigation__element--disabled"><i class="fa-solid fa-envelope element__icon element__icon--bottom"></i></a></li>  
         </ul>
+        </nav>
     </section>
 </body>
 </html>

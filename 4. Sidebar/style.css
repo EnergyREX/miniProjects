@@ -1,8 +1,55 @@
 * {
     font-family: 'Inter', sans-serif;
-    margin: 0px;
+    margin: 0;
 }
 
 body {
     background-color: #101010;
+    height: 100rem;
+}
+
+.container__navigation {
+    position: fixed;
+}
+
+.navigation__bodyList {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    font-size: 2rem;
+    background-color: #d5d5d5;
+    border-radius: 2rem;
+    width: 65px;
+    padding: 0; /* Estética */
+    margin-top: 1rem; /* Estética */
+    margin-left: 1rem;
+}
+
+.navigation__element {
+    list-style-type: none;
+    margin-top: 1rem;
+    transition: 0.4s;
+    color: #101010;
+}
+
+.navigation__element--disabled {
+    color: gray;
+    margin-top: 1rem;
+}
+
+.element__icon {
+    padding-top: 1rem;
+}
+
+.element__icon--top {
+    padding-top: 1rem;
+}
+
+.element__icon--bottom {
+    padding-bottom: 1rem;
+}
+
+.navigation__element:hover {
+    color: rgb(9, 71, 87);
 }
