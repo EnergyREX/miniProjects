@@ -5,83 +5,83 @@
     margin: 0px;
 }
 
-button .btn {
-    width: 24px;
-    height: 24px;
+
+.container__calculator {
+    padding: 10rem;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    display: flex;
-    flex-flow:column wrap-reverse;
-    border: 1px solid;
+.calculator__inputArea {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    grid-column: 1 / 5;
     padding: 1rem;
 }
 
-.num-row {
-    display: flex;
-    flex-wrap: wrap-reverse;
-}
-
-.input-area {
-    display: block;
-    width: 17.2rem;
-    height: 4rem;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.last {
-    align-self: flex-end;
-    text-align: right;
-}
-
-.btn {
-    width: 4rem;
-    height: 4rem;
+.calculator__numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    gap: 0.3rem;
     font-size: 2rem;
-    border: 0px solid;
+}
+
+.numbers__number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(48, 48, 119);
+    padding: 1.7rem;
+    font-weight: 600;
+    user-select: none;
     cursor: pointer;
-    margin: 3px;
 }
 
-.number {
-    background-color: #313131;
+.numbers__number--c {
+    display: flex;
+    align-self: center;
+    background-color: rgb(173, 81, 53);
+    padding: 1.7rem;
+    grid-column: 1 / 3;
+    font-weight: 600;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
 }
 
-
-.number:hover {
-    background-color: #252525;
+.numbers__number--operator {
+    display: flex;
+    align-self: center;
+    background-color: rgb(27, 177, 197);
+    padding: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
 }
 
-.number0 {
-    background-color: #313131;
-    width: 8.4rem;
+.numbers__number--equals {
+    display: flex;
+    align-self: center;
+    background-color: rgb(19, 90, 46);
+    padding: 1.7rem;
+    grid-column: 3 / 5;
+    font-weight: 600;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
 }
 
-.number0:hover {
-    background-color: #252525;
-    width: 8.4rem;
-}
-.operator {
-    background-color: #b83a3a;
+.numbers__number--equals:hover {
+    background-color: rgb(19, 168, 76);
 }
 
-.operator:hover {
-    background-color: #ca3232;
+.numbers__number--operator:hover {
+    background-color: rgb(16, 140, 156);
 }
 
-.ac {
-    width: 17.2rem;
-    background-color: #2172a1;
-}
+.numbers__number--c:hover {
+    background-color: rgb(224, 66, 18);
+} 
 
-.ac:hover {
-    background-color: #1e5d81;
+.numbers__number:hover {
+    background-color: rgb(54, 77, 153);
 }
